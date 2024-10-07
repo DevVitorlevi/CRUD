@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD De Produto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+<body>
+
+    <div class="container">
+            <h1 id="title">Gerenciamento de Produto</h1>
+
+            <div class="form-c">
+                <h2 id="form-title">Cadastrar Produto</h2>
+        <form id="produto-form">
+                <input type="hidden" id="produto-id"/>
+            </div>
+            <div>
+                
+            <label for="nome">Nome:</label> <br>
+                <input type="text" id="name" required placeholder="Ex: Arroz">
+            </div>
+            <div>
+                <label for="preco">Preço:</label> <br>
+                <input type="number"  step="0.01" id="preco" required placeholder="Ex: 500,00">
+            </div>
+            <div>
+                <label for="descricao">Descrição:</label> <br>
+                <textarea id="descricao" placeholder="Descrição do produto."></textarea>
+            </div>
+            <div>
+            <button type="submit" id="btn-s">Cadastrar</button> <br>
+            <button type="reset" id="reset" class="hidden">Cancelar</button>
+            </div>
+        </form>
+
+        <div class="table-container">
+            <h2 id="h2-lista">Lista De Produto</h2>
+            <table id="p-tabela">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--setAtributte e appendChild-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
