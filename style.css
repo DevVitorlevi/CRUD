@@ -1,16 +1,24 @@
 
-
-body{
-    background-color: #e8e8e5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
 *{
     padding: 0;
     margin: 0; 
     font-family: 'Roboto';
+    box-sizing:border-box ;
+    
+}
+
+body{
+    background-color: #e8e8e5;
+}
+main{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+input:focus{
+    outline: none;
 }
 .container{
     background-color: white;
@@ -23,6 +31,10 @@ body{
 label{
     text-align: left;
 }
+textarea{
+    resize: none;
+}
+
 
 input{
     width: 98%;
@@ -41,12 +53,6 @@ input{
     text-align: center;
     margin-bottom: 10px;
 }
-
-textarea{
-    width: 99%;
-    padding: 3px;
-}
-
 #h2-lista{
     text-align: center;
     margin-top: 20px;
@@ -90,8 +96,10 @@ button:hover{
 }
 
 #descricao{
-    border: none;
-    border-bottom: 1px solid black;
+    border: 2px solid;
+    width: 99%;
+    border-radius: 10px;
+    
 }
 
 .hidden{
